@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 90px;
+    width: 100%;
+    padding: 0px 140px;
+    box-sizing: border-box;
+}
+img{
+    height: 120px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    margin-left: 20px;
+    position: relative;
+    transition: 0.5s;
+}
+.sub-menu{
+    position: absolute;
+    top: 28px;
+    left: 0;
+    height: 140px;
+    width: 200px;
+    background-color:black;
+    z-index: 2;
+    text-align: center;
+    display: none;
+    transition: 0.5s;
+}
+.sub-menu h3{
+    margin-top: 30px;
+    border-bottom: 2px solid cyan;
+}
+ul li:hover .sub-menu{
+    display: block;
+    
+}
+ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    transition: 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+ul li a:hover{
+    color: #33ffff;
+    box-shadow: 0 0 10px #33ffff,0 0 5px #66ffff;
+    padding: 5px 10px;
+}
+.toggle-menu{
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+    display: none;
+}
+.banner{
+    height: 91vh;
+    width: 100%;
+    background-image: url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: overlay;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+h2{
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid white;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+form{
+    background-color:transparent;
+    height: 460px;
+    width: 400px;
+    padding: 20px 25px;
+    border-radius: 15px;
+    transition: 0.5s;
+    
+}
+form:hover{
+    background-color:rgb(0, 0, 0, 0.5);
+
+}
+.form-input{
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-input input{
+    height: 32px;
+    width: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0;
+}
+input{
+    width: 100%;
+    height: 28px;
+    margin-top: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+.normal-input{
+    position: relative;
+}
+.normal-input i{
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    font-size: 22px;
+    color: white;
+}
+/* Select */
+select{
+    width: 100%;
+    margin-top: 30px;
+    height: 28px;
+    padding-left: 28px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+button{
+    font-size: 18px;
+    background-color: cyan;
+    padding: 10px 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+button:hover{
+    background-color: #EE5A24;
+    border-radius: 15px;
+}
+select:focus{
+    outline: none;
+}
+option{
+    background-color: rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+input::placeholder{
+    color:white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+@media screen and (max-width:1200px) {
+    header{
+        padding: 0px 100px;
+    }
+}
+@media screen and (max-width:1000px) {
+    header{
+        padding: 0px 50px;
+    }
+}
+@media screen and (max-width:768px) {
+    header{
+        padding: 0px 20px;
+    }
+}
+@media screen and (max-width:730px) {
+    header{
+        position: relative;
+    }
+    ul{
+       flex-direction: column;
+       position: fixed;
+       top: 90px;
+       right: -70%;
+       background-color: black;
+       height: 91vh;
+       width: 70%;
+       transition: 0.8s;
+       z-index: 2;
+    }
+    ul li{
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+    .toggle-menu{
+        display: block;
+    }
+    form{
+        height: 500px;
+    }
+}
+@media screen and (max-width:768px) {
+    form{
+        height: 460;
+    }
+}

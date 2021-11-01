@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN OR SIGN UP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" style="font-size:18px;">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <img src="M Logo.png" alt="">
+        <ul id="menu">
+            <li><a href="#"><i class="bi bi-house-fill"></i>Home</a></li>
+            <li><a href="#"><i class="bi bi-person-lines-fill"></i>About</a> <div class="sub-menu">
+                <h3><a href="#">Portfolio</a></h3>
+                <h3><a href="#">Press</a></h3>
+            </div> </li>
+            <li><a href="#"><i class="bi bi-file-earmark-person"></i>Contact</a></li>
+            <li><a href="#"><i class="bi bi-box-arrow-in-right"></i>Sign-UP</a></li>
+        </ul>
+        <div class="toggle-menu" id="menu-btn">
+            <i class="bi bi-list"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <form action="">
+            <h2>Registration Form</h2>
+            <div class="form-input">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <div class="normal-input">
+                <input type="email" placeholder="Email">
+                <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div class="normal-input">
+                <input type="text" placeholder="Phone Number">
+                <i class="bi bi-phone-fill"></i>
+            </div>
+            <div class="normal-input">
+                <input type="password" placeholder="Password">
+                <i class="bi bi-shield-lock-fill"></i>
+            </div>
+            <div class="normal-input">
+                <input type="password" placeholder="Confirm  Password">
+                <i class="bi bi-shield-lock-fill"></i>
+            </div>
+            <div class="normal-input">
+                <select name="gender" id="gender">
+                    <option value="gender">Select Your Gender</option>
+                    <option value="male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <i class="bi bi-gender-ambiguous"></i>
+            </div>
+            <button type="submit">Sign-In</button>
+        </form>
+    </div>
+    <script src="custom.js"></script>
+</body>
+</html>
